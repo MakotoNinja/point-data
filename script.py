@@ -30,4 +30,4 @@ def del_all_weeds(points):
 device.log('Points before: {}'.format(json.dumps(points)))
 del_all_points(points)
 device.sync()
-device.log(('Points after: {}'.format(json.dumps(points)))
+device.log('Points after: {}'.format(json.dumps(points)))
