@@ -27,6 +27,7 @@ def del_all_weeds(points):
 			except:
 				device.log("App Error - Point ID: {}".format(point['id']), 'error')
 	return num_weeds
-
+device.log('Points before: {}'.format(json.dumps(points)))
 del_all_points(points)
 device.sync()
+device.log(('Points after: {}'.format(json.dumps(points)))
